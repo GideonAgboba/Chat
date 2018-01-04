@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Xi | Home</title>
+	    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/chat-main.css" rel="stylesheet">
+	    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+<script>	
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+		<nav id="sidebar-wrapper">
+		      <ul class="sidebar-nav text-center list-group">
+		      	<li class="sidebar-brand">
+		          <a class="js-scroll-trigger" href="#page-top"></a>
+		        </li>
+		        <li align="center" class="my-auto rounded-circle sidebar-nav-round-section"><img src="imgs/FB_IMG_15051689405445395.jpg"><span class="text-muted">Gideon viens</span></li>
+
+		        <li align="center" class="my-auto navbar-social justify-content-between flex-wrap">
+		        	<div class="row">
+		        		<div class="col-lg-6">
+		        			<a href="#" class="navbar-social-a">Settings</a>
+		        		</div>
+		        		<div class="col-lg-6">
+		        			<i class="fa fa-gear"></i>
+		        		</div>
+		        	</div>
+		        	<div class="row">
+		        		<div class="col-lg-6">
+		        			<a href="#" class="navbar-social-a">Help</a>
+		        		</div>
+		        		<div class="col-lg-6">
+		        			<i class="fa fa-question-circle"></i>
+		        		</div>
+		        	</div>
+		        	<div class="row">
+		        		<div class="col-lg-6">
+		        			<a href="#" class="navbar-social-a">Sign-out</a>
+		        		</div>
+		        		<div class="col-lg-6">
+		        			<i class="fa fa-sign-out"></i>
+		        		</div>
+		        	</div>
+		        </li>
+		        <li class="sidebar-footer">
+		        	<i class="fa fa-facebook rounded-circle"></i>
+		        	<i class="fa fa-instagram rounded-circle"></i>
+		        	<i class="fa fa-twitter rounded-circle"></i>
+		        	<i class="fa fa-google rounded-circle"></i>
+		        	<i class="fa fa-whatsapp rounded-circle"></i>
+		        <br>
+		        <a class="text-white text-center mt-2">Xi@2018</a>
+		        </li>
+		      </ul>
+		    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<nav class="home-navbar">
+				<a href="#" class="menu-toggle">
+					<i class="my-auto fa fa-bars"></i>
+				</a>
+			<div class="container my-auto justify-content-center home-navbar-bottom">
+				<a class="tablink rounded-circle" onclick="openPage('Home', this, 'black')"><i class="fa fa-book"></i></a>
+				<a class="tablink rounded-circle" onclick="openPage('News', this, 'black')" id="defaultOpen"><i class="fa fa-bell"></i></a>
+				<a class="tablink rounded-circle" onclick="openPage('Contact', this, 'black')"><i class="fa fa-envelope"></i></a>
+				<a class="tablink rounded-circle" onclick="openPage('About', this, 'black')"><i class="fa fa-camera"></i></a>
+				
+    			<i id="closeButton" class="fa fa-close"></i>
+
+				<div id="Home" class="tabcontent" href="google.com"> 
+				  <iframe src="file:///C:/Users/Hoi/Desktop/ChatOn/feeds.html"></iframe>
+				</div>
+
+				<div id="News" class="tabcontent" href="google.com">
+				  <h3>News</h3>
+				  <p>Some news this fine day!</p> 
+				</div>
+
+				<div id="Contact" class="tabcontent" href="google.com">
+				  <h3>Contact</h3>
+				  <p>Get in touch, or swing by for a cup of coffee.</p>
+				</div>
+
+				<div id="About" class="tabcontent" href="facebook.com">
+				  <h3>About</h3>
+				  <p>Who we are and what we do.</p>
+				</div>
+			</div>
+		</nav>
+
+
+
+		<div class="container">
+			<div class="home-explore">
+				<iframe src="google.html"></iframe>
+				<section class="home-explore-shearlink">
+					<form class="container">
+						<input type="text" name="" placeholder="Shear link..." class="form-control" required/>
+						<button type="submit" name="" class="form-control" required>Shear <i class="fa fa-send"></i></button>
+					</form>
+				</section>
+			</div>
+		</div>
+
+
+<script>
+	document.getElementById('closeButton').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('Home').style.display = 'none';
+    document.getElementById('Contact').style.display = 'none';
+    document.getElementById('News').style.display = 'none';
+    document.getElementById('About').style.display = 'none';
+}, false);
+</script>
+
+
+<!-- 
+<script>
+	$(document).ready(function() {
+    $('#closeButton').on('click', function(e) { 
+        $('#News').remove();
+        $('#Home').remove();
+        $('#Contact').remove();
+        $('#About').remove();
+    });
+});
+</script> -->
+	    <script src="vendor/jquery/jquery.min.js"></script>
+	    <script src="vendor/popper/popper.min.js"></script>
+    	<script src="js/stylish-portfolio.min.js"></script>
+	    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
